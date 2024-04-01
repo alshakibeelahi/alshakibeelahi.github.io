@@ -51,6 +51,34 @@
             font-weight: bold;
             margin-right: 5px;
         }
+
+        .smaller-text {
+            font-size: 12px;
+            /* Adjust the font size as needed */
+        }
+
+        .title-lg {
+            font-size: 16px;
+            /* Set the title font size to 18px */
+        }
+
+        .company {
+            font-size: 14px;
+            /* Set the title font size to 18px */
+        }
+
+        .box {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tick-mark li::before {
+            content: '\2713';
+            /* Unicode for tick mark */
+            margin-right: 5px;
+        }
     </style>
 
 </head>
@@ -76,7 +104,8 @@
                                                 class="fab fa-linkedin-in"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/alshakibeelahi"><i
                                                 class="fab fa-github-alt"></i></a></li>
-                                    <li class="list-inline-item"><a href="https://www.facebook.com/alshakibeelahirion/"><i
+                                    <li class="list-inline-item"><a
+                                            href="https://www.facebook.com/alshakibeelahirion/"><i
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div><!--//profile-content-->
@@ -107,12 +136,15 @@
                         <h2 class="heading">About Me</h2>
                         <div class="content">
                             <p style="text-align: justify;">
-                                I am an enthusiastic learner in the field of REST API development with a solid
-                                foundation in ASP.NET Web API, ASP.NET MVC, .NET Framework, SOLID design principles, and
-                                n-Tier architecture. I am currently expanding my knowledge in Nest.js, NextJs, and
-                                PostgreSQL to further enhance my skills in full-stack web development. Additionally, I
-                                have experience in C++, C#, Java, PHP, Python, SQL, and a strong aptitude for
-                                problem-solving.
+
+                                I am an avid learner in the realm of full-stack development, with a robust understanding
+                                of React, Express.js, Next.js and MongoDB. Currently, I am expanding my
+                                proficiency in Laravel to enrich my skill set in web
+                                development. Moreover, I have a solid grasp of Redux for state management and have
+                                integrated real-time features using Socket IO in projects like Resid+ and MonGBOR.
+                                Additionally, my expertise extends to technologies like ASP.NET MVC, .NET Framework, and
+                                SOLID design principles, underscoring my commitment to delivering robust and scalable
+                                solutions.
                             </p>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -126,34 +158,81 @@
                             <div class="item featured text-center">
 
                                 <div class="featured-image has-ribbon">
-                                    <a href="https://github.com/alshakibeelahi/AWT_Project" target="_blank">
+                                    <a href="https://web.resid-plus.com/" target="_blank">
                                         <img class="img-fluid project-image rounded shadow-sm"
-                                            src="assets/images/projects/mumerch.png" alt="project name" />
+                                            src="assets/images/projects/resid.png" alt="project name" />
                                     </a>
                                     <div class="ribbon">
                                         <div class="text">New</div>
                                     </div>
                                 </div>
 
-                                <h3 class="title mb-3"><a href="https://github.com/alshakibeelahi/AWT_Project"
-                                        target="_blank">MuMerch (Full-Stack with NestJs, Next.js, Node.js and
-                                        PostgreSQL)</a>
+                                <h3 class="title mb-3"><a href="https://web.resid-plus.com/" target="_blank">Resid+
+                                        (React, Express.js, MongoDB, Socket IO)</a>
                                 </h3>
 
                                 <div class="desc text-start">
-                                    <p style="text-align: justify;">A merchandise management system (full stack) where
+                                    <p style="text-align: justify;">A residence booking system for 6 African nations
+                                        (App is available on both <a
+                                            href="https://play.google.com/store/apps/developer?id=RESID%2BCO&hl=en&gl=US">Play
+                                            store</a> and <a href="https://apps.apple.com/pl/app/resid/id6473281791">App
+                                            store</a>)
+                                        Paydunya’s SoftPay APIs are integrated which supports African mobile money
+                                        services
+                                        like Wave, MOOV etc.
+                                        Used Redux for the front-end state management.
+                                        Real-time chat and notification are integrated with the help of Socket IO
+                                    </p>
+                                </div><!--//desc-->
+                                <a class="btn btn-cta-secondary" href="https://web.resid-plus.com/" target="_blank"><i
+                                        class="fas fa-thumbs-up"></i> Find out more</a>
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://mongbor.com/" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/gbor.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://mongbor.com/" target="_blank"> MonGBOR (React,
+                                            Express.js, MongoDB, Socket IO)</a></h3>
+                                    <p class="mb-2" style="text-align: justify;">An online platform designed to support
+                                        content creators specially in Africa.
+                                        TouchPay is integrated which supports African payment mobile money services like
+                                        Wave, MOOV etc.
+                                        Real-time chat and notification are integrated with the help of Socket IO
+                                    <p><a class="more-link" href="https://mongbor.com/" target="_blank"><i
+                                                class="fas fa-external-link-alt"></i>Find out more</a>
+                                    </p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/alshakibeelahi/AWT_Project"
+                                    target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/mumerch.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/alshakibeelahi/AWT_Project"
+                                            target="_blank">MuMerch (Full-Stack with NestJs, Next.js, Node.js and
+                                            PostgreSQL)</a></h3>
+                                    <p class="mb-2" style="text-align: justify;">A merchandise management system (full
+                                        stack) where
                                         in backend NestJs is used, in frontend Next.js is going to be used and I am
                                         currently working on it to finish this project
                                         In this project we have used <b>'node-mailer'</b> to send mail after a user
-                                        added to the system. Also used <b>'bcrypt'</b> to hash the password and keep it in
-                                        the database and <b>better-html-pdf</b> to make reports through HTML. In front-end <b>Tailwind CSS</b> is used with Flowbite library to make it responsive.
-                                         Also we have used chart.js to display bar charts in the dedicated dashboard at front-end.
+                                        added to the system. Also used <b>'bcrypt'</b> to hash the password and keep it
+                                        in
+                                        the database and <b>better-html-pdf</b> to make reports through HTML. In
+                                        front-end <b>Tailwind CSS</b> is used with Flowbite library to make it
+                                        responsive.
+                                        Also we have used chart.js to display bar charts in the dedicated dashboard at
+                                        front-end.</p>
+                                    <p><a class="more-link" href="https://github.com/alshakibeelahi/AWT_Project"
+                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
                                     </p>
                                 </div><!--//desc-->
-                                <a class="btn btn-cta-secondary" href="https://github.com/alshakibeelahi/AWT_Project"
-                                    target="_blank"><i class="fas fa-thumbs-up"></i> Find out more</a>
                             </div><!--//item-->
-                            <hr class="divider" />
                             <div class="item row">
                                 <a class="col-md-4 col-12"
                                     href="https://github.com/alshakibeelahi/MuMerch_Backend_ASP.NET_Web_API"
@@ -212,7 +291,7 @@
                                 </div><!--//desc-->
                             </div><!--//item-->
 
-                            <div class="item row">
+                            <!-- <div class="item row">
                                 <a class="col-md-4 col-12" href="https://github.com/alshakibeelahi/Smart_Hostel"
                                     target="_blank">
                                     <img class="img-fluid project-image rounded shadow-sm"
@@ -229,8 +308,8 @@
                                     <p><a class="more-link" href="https://github.com/alshakibeelahi/Smart_Hostel"
                                             target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
                                     </p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
+                                </div>
+                            </div>//item -->
                             <div class="item row">
                                 <a class="col-md-4 col-12"
                                     href="https://github.com/alshakibeelahi/Oracle_Based_Fashion_House_Management"
@@ -307,6 +386,32 @@
                 </section><!--//section-->
             </div><!--//primary-->
             <div class="secondary col-lg-4 col-12">
+                <aside class="employment aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Employment History</h2>
+                        <div class="content">
+                            <div class="item box">
+                                <h3 class="title-lg"><i class="fas fa-briefcase"></i> Junior Software Engineer</h3>
+                                <h4 class="company">bdCalling IT Ltd. <span class="year">(1 Dec 2023 -
+                                        Continuing)</span></h4>
+                                <ul class="list-unstyled smaller-text tick-mark">
+                                    <li>Deployed frontend and backend part in DigitalOcean using Nginx.</li>
+                                    <li>Maintained communication with client for ensuring project alignment.</li>
+                                    <li>Integrated APIs with Redux.</li>
+                                </ul>
+                            </div><!--//item-->
+                            <div class="item box">
+                                <h3 class="title-lg"><i class="fas fa-briefcase"></i> Software Engineer Intern</h3>
+                                <h4 class="company">bdCalling IT Ltd. <span class="year">(1 Sep 2023 – 30 Nov
+                                        2023)</span></h4>
+                                <ul class="list-unstyled smaller-text tick-mark">
+                                    <li>Deployed backend using Express.js.</li>
+                                    <li>Worked with Socket.IO for real-time messaging and notification system.</li>
+                                </ul>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
                 <aside class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Skills</h2>
@@ -316,7 +421,7 @@
                                     <h5 class="card-title text-center">Frontend</h5>
                                     <ul class="list-unstyled tick-mark">
                                         <li>Next.js</li>
-                                         <li>React</li>
+                                        <li>React</li>
                                         <li>ASP.NET MVC</li>
                                     </ul>
                                 </div>
@@ -374,7 +479,8 @@
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc in Computer Science and
                                     Engineering</h3>
                                 <h4 class="university">American International University - Bangladesh <span
-                                        class="year">(2020 - Present)</span></h4>
+                                        class="year">(2020 - 2024)</span></h4>
+                                <h4 class="university">CGPA - 3.92</h4>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> HSC</h3>
